@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUDNA STRONA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="body">
+    <header id="showcase">
+
+        <video autoplay muted name="media" loop id="myVideo">
+            <source src="DOMZPAPIERU.mp4" type="video/mp4">
+        </video>
+
+        <nav id="topnav"></nav>
+        <div class="logo">KL</div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <marquee class="marqueeText" direction="up" width="15" height="25" Scrollamount=4,5>
+                <span class="material-icons">north</span>
+            </marquee>
+        </button>
+
+        <ul>
+            <li><a href="#showcase"><button onclick="openSiteMenu()" class="buttonmenu">
+                        <i class="material-icons" style="font-size: 40px;">menu</i>
+                    </button></a></li>
+            <li><a href="#contactMenu_link">
+                    <button class="button"><i class="material-icons">call</i>KONTAKT
+                    </button></a></li>
+            <li><a href="#portfolio"><button class="button">
+                        <i class="material-icons">auto_awesome</i>PORTFOLIO
+                    </button></a></li>
+        </ul>
+        </nav>
+        <div id="SiteMenu" class="sideMenu">
+            <a href="javascript:void(0)" class="closeBTN" onclick="closeSiteMenu()">&times;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+        </div>
+    </header>
+    <h2 class="h2">TWORZE <marquee class="marqueeText" direction="up" width="350" height="30" Scrollamount=3,5>
+            OBIEKTY 3D<br>
+            NUDNE RZECZY<br>
+            GRY NA UNITY
+        </marquee>
+        <br><br><br><br><br><br>
+        <marquee class="downArrow" direction="down" width="60" height="50">
+            <i class="material-icons" style="font-size: 80px;">keyboard_double_arrow_down</i>
+        </marquee>
+
+        <div style="margin-top: 300px;">
+            <h2 class="h2Text">STATYSTYKI</h2>
+            <div class="counterBox_R">
+                <i class="material-icons" style="font-size: 80px;">lightbulb</i>
+                <a style="font-size: 40px;text-align: center;"> 12 STWORZONYCH PROJEKTÓW</a>
+            </div>
+            <br><br>
+            <div class="counterBox_L">
+                <a style="font-size: 40px;text-align: center;"> ZAPROGRAMOWANYCH GIER 0.75</a>
+                <i class="material-icons" style="font-size: 80px;">sports_esports</i>
+            </div>
+            <br><br>
+            <div class="counterBox_R">
+                <i class="material-icons" style="font-size: 80px;">timer</i>
+                <a style="font-size: 35px;text-align: center;">20 GODZIN PROGRAMOWANIA TEJ STRONY</a>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <div id="portfolio" style=" margin:30px; ">
+            <h2 class="h2Text">PORTFOLIO</h2>
+            <table class PortfolioTable>
+
+                <tr style="border: none;">
+                    <td>
+                        <div class="textOnPicture"></div>
+                        <img src="Domek_CLR2.png" class="tablePhoto" onmouseover="this.src = 'Domek_CLR.png'"
+                            onmouseout="this.src = 'Domek_CLR2.png'">
+                    </td>
+                    <td>
+                        <div class="textOnPicture">OBIEKTY<br>3D</div>
+                        <img src="mleko xd.png" class="tablePhoto" onmouseover="this.src = 'mleko xd.png'"
+                            onmouseout="this.src = 'mleko xd.png'">
+                    </td>
+                    <td>
+                        <div class="textOnPicture"></div>
+                        <img src="Rakieta_CLR1.png" class="tablePhoto" onmouseover="this.src = 'Rakieta_CLR2.png'"
+                            onmouseout="this.src = 'Rakieta_CLR1.png'">
+                    </td>
+                </tr>
+                <tr style="border: none;">
+                    <td>
+                        <div class="textOnPicture"></div>
+                        <img src="15.png" class="tablePhoto" onmouseover="this.src = '17.png'"
+                            onmouseout="this.src = '15.png'">
+
+                    </td>
+                    <td>
+                        <div class="textOnPicture">SZKOŁA <BR>"Z PAPIERU"</div>
+                        <img src="10.png" class="tablePhoto" style="transition: opacity 100ms linear;"
+                            onmouseover="this.src = '11.png'" onmouseout="this.src = '10.png'">
+                    </td>
+                    <td>
+                        <div class="textOnPicture"></div>
+                        <img src="17.png" class="tablePhoto" onmouseover="this.src = '15.png'"
+                            onmouseout="this.src = '17.png'">
+                    </td>
+                </tr>
+                <tr style="border: none;">
+                    <td>
+                        <div class="textOnPicture"></div>
+                        <img src="EveryThink_CLR_Black.png" class="tablePhoto"
+                            onmouseover="this.src = 'EveryThink_CLR.png'"
+                            onmouseout="this.src = 'EveryThink_CLR_Black.png'">
+                    </td>
+                    <td>
+                        <div class="textOnPicture">SZKOŁA <BR>Z PAPIERU</div>
+                        <img src="INTRO_CLR_Black.png" class="tablePhoto" style="transition: opacity 100ms linear;"
+                            onmouseover="this.src = 'INTRO_CLR_Black.png'"
+                            onmouseout="this.src = 'INTRO_CLR_Black.png'">
+                    </td>
+                    <td>
+                        <div class="textOnPicture"></div>
+                        <img src="STREET_CLR_Black1.png" class="tablePhoto"
+                            onmouseover="this.src = 'STREET_CLR_Black.png'"
+                            onmouseout="this.src = 'STREET_CLR_Black1.png'">
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="game_contaner">
+            <div class="h2Text">SZKOŁA Z PAPIERU
+                <h6>-CZYLI wielka MAŁA Gra</h6>
+            </div>
+            <br>
+            <button class="game_button">
+                <a href="#"><span style="font-size: 164px;color: rgb(255, 255, 255);" class="material-icons">
+                        sports_esports
+                    </span>
+                </a></button>
+        </div>
+        <br><br>
+        <div class="programs_contaner">
+            <div class="h2Text">TWORZE NA:</div>
+
+            <ol>
+                <li><button class="program_button">¯\_(ツ)_/¯</button></li><br><br>
+                <ol>GRY:
+                    <li><button class="program_button">1.UNITY</button></li>
+                    <li><button class="program_button">2.BLENDER 3D</button></li>
+                    <li><button class="program_button">3.MIXER</button></li>
+                    <li><button class="program_button">4.VISUAL STUDIO</button></li>
+                    <li><button class="program_button">5.AUDACITY</button></li>
+                </ol>
+                <ol>STRONA:
+                    <li><button class="program_button">1.VISUAL STUDIO CODE</button></li>
+                    <li><button class="program_button">2.MICROSOFT EDGE</button> </li>
+                    <li><button class="program_button">3.VSCODE-PETS</button></li>
+                    <li><button class="program_button">4.LIVE SERVER</button></li>
+                </ol>
+                <ol>3D:
+                    <li><button class="program_button">1.BLENDER3D</button></li>
+                    <li><button class="program_button">2.MIXER</button></li>
+                    <li><button class="program_button">3.STREET VIEW</button></li>
+                    <li><button class="program_button">4.PINTEREST</button></li>
+                </ol>
+            </ol>
+
+        </div>
+
+
+        <div class="aboutMe">
+            <h2 class="aboutMe_h2">O MNIE
+                <br>
+                <button class="aboutMe_button" onclick="openAboutMe_Menu()">
+                    <span style="font-size:34px" class="material-icons"> arrow_circle_down</span>
+                    ROZWIŃ
+                    <span style="font-size:34px" class="material-icons">arrow_circle_down</span></button>
+                <br><br>
+        </div>
+        <div id="AboutMe_Menu" class="aboutMe_Menu">
+            <span style="font-size:200px;color: black;" class="material-icons">account_circle</span><br>
+            <a style="color: #000;">Kamil Lewczuk</a>
+            <div class="aboutMe_text2">
+                <a>PROFIL<br>
+                    <h5>
+                        *BLA BLA BLA<br>
+                        BLA BLA BLA <br>
+                        *BLA BLA BLA<br>
+                        BLA BLA BLA <br>
+                    </h5>
+                </a>
+                <a>DOŚWIADCZENIE
+                    <h5>
+                        -brak <br>
+                        xd <br>
+                        /ᐠ｡ꞈ｡ᐟ\<br>
+                        <br>
+                    </h5>
+                </a>
+                <a>REFERENCJE
+                    <h5>
+                        -brak<br>
+                        /ᐠ｡ꞈ｡ᐟ\<br>
+                        <br>
+                        <br>
+                    </h5>
+                </a>
+            </div>
+            <div class="aboutMe_text2">
+                <a>JEZYK
+                    <h5>
+                        *BLA BLA BLA<br>
+                        BLA BLA BLA <br>
+                        *BLA BLA BLA<br>
+                        BLA BLA BLA <br>
+                    </h5>
+                </a>
+                <a>WYKSZTAŁCENIE
+                    <h5>
+                        *BLA BLA BLA<br>
+                        BLA BLA BLA <br>
+                        *BLA BLA BLA<br>
+                        BLA BLA BLA <br>
+                    </h5>
+                </a>
+                <a>KONTAKT
+                    <h5>
+                        *BLA BLA BLA<br>
+                        BLA BLA BLA <br>
+                        *BLA BLA BLA<br>
+                        BLA BLA BLA <br>
+                    </h5>
+                </a>
+            </div>
+            <br>
+            <a href="javascript:void(0)" class="closeBTN2" onclick="closeAboutMe_Menu()">
+                <span style="font-size:64px" class="material-icons">arrow_circle_up</span></a>
+
+
+        </div>
+    </h2>
+    <br><br>
+    </h2>
+    <div id="contactMenu_link"></div>
+    <div class="contactMenu">
+        <div class="textInContactMenu">
+            <h1> <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1s7W_v8sdT-8MLlyj3n5m9ypH3w1stBnI&ehbc=2E312F"
+                    width="700" height="350"></iframe></h1>
+
+            <h2>ZNAJDZIESZ MNIE RÓWNIESZ<br>
+                <ul style="float: center;">
+                    <li>
+                        <a href="https://steamcommunity.com/id/MrBread123/" style="padding: 40px ;color:white;">
+                            <img style="height: 80px;" src="steam-big-icon-steam-png-clipart.png" alt="steam">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/file/d/1rtYe3TXwmNnyAqtiIxBaA4PZaM5os0ea/view?usp=sharing"
+                            style="padding: 30px ;color:white;" href="2">
+                            <img style="height: 80px;" src="139-1399232_google-drive-logo-png-google-logo-g-white.png"
+                                alt="GoogleDrive">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="padding: 30px ;color:white;" href="3">
+                            <img style="height: 80px;" src="instagram-icon-white.png" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="padding: 40px ;color:white;" href="4">
+                            <img style="height: 80px;" src="facebook-icon.png" alt="facebook">
+                        </a>
+                    </li>
+                </ul>
+            </h2>
+        </div>
+        <div class="overlay">
+            <form>
+                <h2 class="h2Text">KONTAKT</h2>
+                <label for="name">IMIE I NAZWISKO:</label>
+                <input type="text" id="name&surmane" placeholder="">
+                <small class="BŁĄD"></small>
+
+                <label for="email">EMAIL:</label>
+                <input type="text" id="email" placeholder="">
+                <small class="BŁĄD"></small>
+
+                <label for="subject">TEMAT:</label>
+                <input type="text" id="subject" placeholder="">
+                <small class="BŁĄD"></small>
+
+                <label for="message">WIADOMOŚĆ:</label>
+                <textarea id="message" placeholder="" rows="10"></textarea>
+                <small class="BŁĄD"></small>
+
+                <div class="center">
+                    <input type="submit" value="WYŚLIJ">
+                    <p id="success"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="downNavBar">
+        <div style="margin: 20px;">
+            <div class="downLogo">KL</div>
+        </div>
+        <div>
+            <dl>
+                <dt>
+                    <h1>
+                        SOCIAL MEDIA
+                    </h1>
+                </dt>
+                <dd>
+                    <h3><a href="https://drive.google.com/file/d/1rtYe3TXwmNnyAqtiIxBaA4PZaM5os0ea/view?usp=sharing"
+                            style="padding: 30px ;color:white;">FACEBOOK</a></h3>
+                </dd>
+                <dd>
+                    <h3><a href="https://drive.google.com/file/d/1rtYe3TXwmNnyAqtiIxBaA4PZaM5os0ea/view?usp=sharing"
+                            style="padding: 30px ;color:white;">INSTAGRAM</a></h3>
+                </dd>
+                <dd>
+                    <h3><a href="https://drive.google.com/file/d/1rtYe3TXwmNnyAqtiIxBaA4PZaM5os0ea/view?usp=sharing"
+                            style="padding: 30px ;color:white;">GOOGLE DRIVE</a></h3>
+                </dd>
+            </dl>
+        </div>
+        <div style="margin: 80px;">
+            <div class="downNavBar_text">
+                <h4>Autor<br>@Kamil_L
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function openSiteMenu() {
+            document.getElementById("SiteMenu").style.width = "100%";
+        }
+
+        function closeSiteMenu() {
+            document.getElementById("SiteMenu").style.width = "0";
+        }
+
+        function openAboutMe_Menu() {
+            document.getElementById("AboutMe_Menu").style.height = "1600px";
+        }
+
+        function closeAboutMe_Menu() {
+            document.getElementById("AboutMe_Menu").style.height = "300px";
+        }
+
+        var mybutton = document.getElementById("myBtn");
+
+        // pojawienie sie BTN
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        //DO góry
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>
