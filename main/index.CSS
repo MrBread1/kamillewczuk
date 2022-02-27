@@ -238,6 +238,12 @@ height: 310px;
     background-repeat: no-repeat;
     background-size: 1300px 700px ;
     }
+    @media screen and (max-width:800px){
+        .game_button{
+            height: auto;
+            width: calc(100% - 100px);
+        }
+    }
     .programs_contaner ol{
     display: flex;
     flex-direction:row;
@@ -246,6 +252,7 @@ height: 310px;
     align-items: center;
     align-content: center;
     list-style-type: style;
+    text-align: center;
 }
     .programs_contaner ol li{
     width: auto ;
@@ -264,7 +271,12 @@ margin: 40px 10px;
     .program_button:hover{
 color: white;
 font-weight: 500;
-text-shadow: 1px 1px 2px black, 0 0 25px rgb(183, 201, 25), 0 0 5px rgb(139, 125, 0);
+text-shadow: 1px 1px 2px black, 0 0 25px rgb(201, 81, 25), 0 0 5px rrgb(139, 0, 0)
+}
+@media screen and (max-width:800px) {
+.program_button{
+   font-size: 18px;
+}
 }
 
     .downArrow{
@@ -332,7 +344,7 @@ text-shadow: 1px 1px 2px black, 0 0 25px rgb(183, 201, 25), 0 0 5px rgb(139, 125
     .counterBox_L{
         border: rgb(255, 255, 255) solid 3px;
     border-radius: 0;
-    width: 100%;
+    width: 89%;
     height: 60px;
     float: center;
     margin-left: 0;
@@ -398,6 +410,12 @@ text-shadow: 1px 1px 2px black, 0 0 25px rgb(183, 201, 25), 0 0 5px rgb(139, 125
     width:100% auto
   }
 
+  @media screen and (max-width:800px){
+    .contactMenu{
+        background-image: none;
+    }
+}
+
 .aboutMe{
     height: 150px;
     width: 100%;
@@ -454,6 +472,12 @@ border: rgb(255, 255, 255) solid 10px;
     transition: 0.5s;
     overflow-y:hidden;
   }
+  @media screen and (max-width:800px) {
+      .aboutMe_Menu,.aboutMe{
+        display: none;
+      }
+      
+  }
   
   .aboutMe_Menu a {
     padding: 8px 8px 8px 32px;
@@ -474,7 +498,45 @@ border: rgb(255, 255, 255) solid 10px;
     font-size: 36px;
     margin-left: 50px;
   }
-
+  .map{
+    width: 700px;
+    height: 350px;
+  }
+  @media screen and (max-width:800px){
+    .map{display: none;}
+}
+.socialMedia{
+    margin: 0px;
+}
+.socialMedia_icon{
+    height: 80px;
+}
+.socialMedia_padding1{
+    padding: 40px;
+}
+.socialMedia_padding2{
+    padding: 30px;
+}
+@media screen and (max-width:800px) {
+    .socialMedia_padding1{
+        padding: 20px;
+    }
+}
+@media screen and (max-width:800px) {
+    .socialMedia_padding2{
+        padding: 25px;
+    }
+    }
+@media screen and (max-width:800px) {
+.socialMedia_icon{
+    height: 40px;
+}
+    }
+@media screen and (max-width:800px){
+    .socialMedia{
+        color: rgb(255, 255, 255);
+    }
+}
 .ovelay{
     width: 100%;
     height: 100%;
@@ -482,8 +544,13 @@ border: rgb(255, 255, 255) solid 10px;
     background-color: rgba(255, 0, 0, 0.075);
     margin-right: 100px;
 }
+@media screen and (max-width:800px) {
+    .ovelay{
+        margin-right: 0px;
+    }
+}
 .textInContactMenu{
-    border: 5px rgba(255, 255, 255, 0) solid;
+    border: none;
     color: rgb(255, 255, 255);
     font-size: 20px;
     text-align: center;
@@ -494,7 +561,12 @@ border: rgb(255, 255, 255) solid 10px;
     overflow-y: 1;
     background-color: rgba(255, 255, 255, 0);
 }
-
+@media screen and (max-width:800px) {
+    .textInContactMenu{
+        margin: 0px;
+        width: auto;
+    }
+}
 .contactMenu_list ul{
     list-style: none;
 }
@@ -520,6 +592,15 @@ border: rgb(255, 255, 255) solid 10px;
     color: rgb(255, 255, 255);
     font-weight: 600;
 }
+ @media screen and (max-width:800px){
+.contactMenu form{
+    margin: 0px;
+    padding: 30px;
+    margin-top: 150px;
+} 
+} 
+    
+
 .contactMenu h1{
     margin:0;
     text-align: left;
@@ -591,3 +672,27 @@ align-content: space-between;
     color: white;
     font-size: 80px;
 }
+.downNavBar_margin80{
+    margin: 80px;
+}
+
+@media screen and (max-width:700px) {
+    .downNavBar{
+        height: 150px;
+    }
+    .downLogo{
+        font-size: 30px;
+     
+    }
+    .downNavBar_text{
+        font-size: 10px;
+    }
+    .center{
+        font-size: 5px;
+        margin-top: 20px;
+    }
+    .downNavBar_margin80{
+    margin: 20px;
+    }
+}
+
