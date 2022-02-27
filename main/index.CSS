@@ -173,36 +173,61 @@ font-size: 40px;
 width: 100%;
 }
 @media screen and (max-width: 800px) {
-.h2,.h2Text{
+    .h2,.h2Text{
 font-size: 24px;
 }  
   }
-.tablePhoto{
+    .tablePhoto{
 width: 612px;
 height: 310px;
 }
 
-.textOnPicture{
+    .textOnPicture{
     position:absolute ;
     padding-top: 140px;
     padding-left: 220px;
     color: rgb(255, 255, 255);
     overflow-y: 1;
 }
-.PortfolioTable {
+@media screen and (max-width:800px) {
+    .tablePhoto,.textOnPicture{
+        display: none;
+    }
+}
+    .responsivePhoto,.textOnResponsivePicture{
+    display: none;
+}
+@media screen and (max-width:800px) {
+    .responsivePhoto{
+        display: inline;
+            width: 100%;
+            height:auto;   
+    }
+    .textOnResponsivePicture{
+    display: inline;
+    position:absolute ;
+    padding-top: 20%;
+    padding-left: 30%;
+    color: rgb(255, 255, 255);
+    overflow-y: 1;
+    }
+}
+
+    .PortfolioTable {
     border-collapse: collapse;
     border: none;
     color: white;
    margin: 10px;
 }
-#portfolio{
+    #portfolio{
     text-align: center;
     padding-bottom: 30px;
     padding-top: 50pxpx;
     transition: 100ms linear;
     color: rgb(255, 255, 255);
+    margin: 15px;
 }
-.game_button{
+    .game_button{
     height: 700px;
     width: 1300px;
     margin-left: 20px;
@@ -213,7 +238,7 @@ height: 310px;
     background-repeat: no-repeat;
     background-size: 1300px 700px ;
     }
-.programs_contaner ol{
+    .programs_contaner ol{
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
@@ -222,27 +247,27 @@ height: 310px;
     align-content: center;
     list-style-type: style;
 }
-.programs_contaner ol li{
+    .programs_contaner ol li{
     width: auto ;
 margin: 40px 10px;
 }
-.programs_contaner ol li a{
+    .programs_contaner ol li a{
     text-decoration: none;
 }
-.program_button{
+    .program_button{
     background: transparent;
     border: none;
     font-size: 40px;
     color: rgba(255, 255, 255, 0.63);
     font-weight: 400;
 }
-.program_button:hover{
+    .program_button:hover{
 color: white;
 font-weight: 500;
 text-shadow: 1px 1px 2px black, 0 0 25px rgb(183, 201, 25), 0 0 5px rgb(139, 125, 0);
 }
 
-.downArrow{
+    .downArrow{
     margin: 0;
     padding: 0;
 }
@@ -275,8 +300,18 @@ text-shadow: 1px 1px 2px black, 0 0 25px rgb(183, 201, 25), 0 0 5px rgb(139, 125
     font-size: 20px;
     text-align: right;
   }    
-  
 }
+
+#fontCounterBox2{
+    font-size: 30px;
+    text-align: center;
+}    
+@media screen and (max-width:800px) {
+  #fontCounterBox2{
+    font-size: 16px;
+    text-align: right;
+  }
+  }    
 
 .counterBox_L{
     border: rgb(255, 255, 255) solid 5px;
