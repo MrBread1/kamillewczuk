@@ -5,5 +5,6 @@ portfolio skończ
 button start *to do
 icons do mediów +odsyłacze
 kategoria rel
-side MN
+side MNfsd
+
 CNT MN
